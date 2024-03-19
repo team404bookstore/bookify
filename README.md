@@ -21,6 +21,14 @@ button :
 background: linear-gradient(#0ab5fc, #1f62ed) padding-box, linear-gradient(180deg, #dff8ff, #dff8ff) border-box;
 
 
+# how to run :
+
+go to terminal and type 
+```
+    npm run watch
+```
+
+
 
 ## About The Project
 
