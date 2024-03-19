@@ -23,8 +23,12 @@ background: linear-gradient(#0ab5fc, #1f62ed) padding-box, linear-gradient(180de
 
 # how to run :
 
+
 go to terminal and type 
+
 ```
+    npm install
+    
     npm run watch
 ```
 
