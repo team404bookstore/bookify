@@ -1,11 +1,10 @@
 // import { faker } from "@faker-js/faker";
 
-const homeProducts = document.querySelector(".home-products-grid");
-console.log(homeProducts)
+const productsContainer = document.querySelector(".products-grid");
 const products = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((p, i) => ({
   title: "bestbook",
   description: "this is the best book ever",
-  image: `assets/images/products/${i + 1}.webp`,
+  image: `../assets/images/products/${i + 1}.webp`,
   price: "122",
   discount: "2",
   // this will have to be modified in schema
@@ -14,10 +13,11 @@ const products = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((p, i) => ({
 
 products.map((p) => {
   const productElement = document.createElement("div");
+  productElement.className =
+    "bg-white shadow rounded overflow-hidden group w-56";
   productElement.innerHTML = `
-    <div class=" bg-white shadow rounded overflow-hidden group">
     <div class="relative">
-        <img src="${p.image}" alt="${p.title}" class="w-full !h-64">
+        <img src="${p.image}" alt="${p.title}" class="w-full h-96">
         <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center 
         justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
             <a href="#"
@@ -55,7 +55,6 @@ products.map((p) => {
     <a href="#"
         class="btn-primary">Add
         to cart</a>
-</div>`;
-  homeProducts.appendChild(productElement);
+`;
+  productsContainer.appendChild(productElement);
 });
-
