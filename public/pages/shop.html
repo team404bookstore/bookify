@@ -35,10 +35,10 @@
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </span>
                 <input type="text" name="search" id="search"
-                    class="w-full border border-primary border-r-0 pl-12 py-3 pr-3 rounded-l-md hidden md:flex focus:outline-none"
+                    class="w-full border border-primary border-r-0 pl-12 py-3 pr-3 rounded-l-md focus:outline-none"
                     placeholder="search">
                 <button
-                    class="bg-primary border border-primary text-white px-8 rounded-r-md hover:bg-transparent hover:text-primary transition md:flex hidden">Search</button>
+                    class="bg-primary border border-primary text-white px-8 rounded-r-md hover:bg-transparent hover:text-primary transition">Search</button>
             </div>
 
             <div class="flex items-center space-x-4">
@@ -115,9 +115,9 @@
             <div class="flex items-center justify-between flex-grow md:pl-12 py-5">
                 <div class="flex items-center space-x-6 capitalize">
                     <a href="../index.html" class="text-gray-200 hover:text-white transition">Home</a>
-                    <a href="pages/shop.html" class="text-gray-200 hover:text-white transition">Shop</a>
-                    <a href="#" class="text-gray-200 hover:text-white transition">About us</a>
-                    <a href="#" class="text-gray-200 hover:text-white transition">Contact us</a>
+                    <a href="../pages/shop.html" class="text-gray-200 hover:text-white transition">Shop</a>
+                    <a href="../pages/#" class="text-gray-200 hover:text-white transition">About us</a>
+                    <a href="../pages/#" class="text-gray-200 hover:text-white transition">Contact us</a>
                 </div>
                 <a href="login.html" class="text-gray-200 hover:text-white transition">Login</a>
             </div>
@@ -126,7 +126,7 @@
     <!-- ./navbar -->
 
     <!-- breadcrumb -->
-    <div class="container py-4 flex items-center gap-3">
+    <div class="container py-4 flex items-center gap-4">
         <a href="../index.html" class="text-primary text-base">
             <i class="fa-solid fa-house"></i>
         </a>
@@ -143,7 +143,7 @@
         <!-- drawer init and toggle -->
         <div class="text-center md:hidden" >
             <button
-                class="text-white hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 block md:hidden"
+                class="text-white hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 block md:hidden" title="btn"
                 type="button" data-drawer-target="drawer-example" data-drawer-show="drawer-example"
                 aria-controls="drawer-example">
                 <ion-icon name="grid-outline"></ion-icon>
@@ -234,30 +234,6 @@
             </div>
         </div>
 
-        <div class="pt-4">
-            <h3 class="text-xl text-gray-800 mb-3 uppercase font-medium">Color</h3>
-            <div class="flex items-center gap-2">
-                <div class="color-selector">
-                    <input type="radio" name="color" id="red" class="hidden">
-                    <label for="red"
-                        class="border border-gray-200 rounded-sm h-6 w-6  cursor-pointer shadow-sm block"
-                        style="background-color: #fc3d57;"></label>
-                </div>
-                <div class="color-selector">
-                    <input type="radio" name="color" id="black" class="hidden">
-                    <label for="black"
-                        class="border border-gray-200 rounded-sm h-6 w-6  cursor-pointer shadow-sm block"
-                        style="background-color: #000;"></label>
-                </div>
-                <div class="color-selector">
-                    <input type="radio" name="color" id="white" class="hidden">
-                    <label for="white"
-                        class="border border-gray-200 rounded-sm h-6 w-6  cursor-pointer shadow-sm block"
-                        style="background-color: #fff;"></label>
-                </div>
-
-            </div>
-        </div>
 
     </div>
     <div class="grid grid-cols-2 gap-4">
@@ -345,39 +321,14 @@
                     </div>
                 </div>
 
-                <div class="pt-4">
-                    <h3 class="text-xl text-gray-800 mb-3 uppercase font-medium">Color</h3>
-                    <div class="flex items-center gap-2">
-                        <div class="color-selector">
-                            <input type="radio" name="color" id="red" class="hidden">
-                            <label for="red"
-                                class="border border-gray-200 rounded-sm h-6 w-6  cursor-pointer shadow-sm block"
-                                style="background-color: #fc3d57;"></label>
-                        </div>
-                        <div class="color-selector">
-                            <input type="radio" name="color" id="black" class="hidden">
-                            <label for="black"
-                                class="border border-gray-200 rounded-sm h-6 w-6  cursor-pointer shadow-sm block"
-                                style="background-color: #000;"></label>
-                        </div>
-                        <div class="color-selector">
-                            <input type="radio" name="color" id="white" class="hidden">
-                            <label for="white"
-                                class="border border-gray-200 rounded-sm h-6 w-6  cursor-pointer shadow-sm block"
-                                style="background-color: #fff;"></label>
-                        </div>
-
-                    </div>
-                </div>
-
             </div>
         </div>
         <!-- products -->
         <div class="col-span-3">
             <div class="flex items-center mb-4">
-                <select name="sort" id="sort"
+                <select name="sort" id="sort" title="Sort b"
                     class="w-44 text-sm text-gray-600 py-3 px-4 border-gray-300 shadow-sm rounded focus:ring-primary focus:border-primary">
-                    <option value="">Default sorting</option>
+                    <option value="default">Default sorting</option>
                     <option value="price-low-to-high">Price low to high</option>
                     <option value="price-high-to-low">Price high to low</option>
                     <option value="latest">Latest product</option>
